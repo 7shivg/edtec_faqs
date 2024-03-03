@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 120px;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+ /* ------------NAVBAR --------------------------- */
+.navbar {
+  background-color: #f5ecec;
+  color: #fff;
+  position: fixed;
+  width: auto;
+  padding: 10px 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo a {
+  color: #db1111;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.nav-links li a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  text-decoration: none;
+  color: red;
+  
+ 
+}
+.hire-button{
+  background-color: #9f930e; /* Change background color */
+  color: rgb(10, 9, 9); /* Change text color */
+ 
+
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid #9f930e;
+
+}
+.hire-button:hover{
+  color:red;
+}
+.register-button {
+    background-color: #790c65; /* Change background color */
+    color: rgb(215, 190, 190); /* Change text color */
+    margin: 20px,20px;
+    padding: 15px,30px;
+    border: 2px solid rgb(62, 49, 49);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+   
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f5ecec;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  border: 2px solid black;
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+
+.nav-links li:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1000;
+  top: calc(100% + 5px);
+  left: 50%;
+    transform: translateX(-50%);
+  /* margin-top: 10px; */
+}
+
+.dropdown li {
+  inline-size: auto;
+  margin: 5px 0;
+  white-space: nowrap;
+  color: #0f0f0f;
+  list-style: none;
+}
+
+.dropdown li a {
+  color: #121111;
+  text-decoration: none;
+  display: block;
+  padding: 10px; /* Add padding for spacing */
+  border-radius: 5px; /* Add rounded corners */
+  border: 1px solid #705b5b; /* Add border */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.dropdown li a:hover {
+  text-decoration: none;
+}
+
+
+
+/*+-------- Media query for navbar--------------------------------------------- */
+
+
+
+/*-----------Frequently asked questions----------------------*/
+
+
+.faq-header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgb(246, 244, 161);
+    box-sizing: border-box;
+    width: auto;
+}
+
+.faq-header h1 {
+  margin: 45px;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 100px; /* Remove default margin for h1 element */
+
+  }
+@media only screen and (max-width:375px){
+  .faq-header {
+    width: 100%;
+  }
+  .hamburger-menu .bar{
+    margin-right: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 400px){
+  .faq-header  {
+    max-width: 100%;
+  }
+  
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-category {
+    margin-bottom: 20px;
+  }
+  .faq-category h2{
+    margin-top: 80px;
+    margin-left: -137px;
+  }
+  
+  .faq-item {
+    border: 2px solid #242020;
+    border-radius: 1px;
+    margin-bottom: 12px;
+    margin-left: -135px;
+    margin-right: 172px;
+    width: 1024px;
+    padding: 15px;
+  }
+  
+  .answer {
+    display: none;
+    padding: 10px;
+  }
+
+  .question h3 {
+    margin: 0;
+  }
+  
+  .question h3 a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    color: #0f0f0f;
+  }
+  .question h3 a:target {
+    color: red;
+  }
+  
+  .question h3 a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
+  /* Enquire now container  */
+  .sticky-box {
+    position: fixed;
+    top: 50%;
+    right: -35px; /* Adjust as needed to leave space for the scrollbar */
+    transform: translateY(-50%) rotate(90deg);
+    background-color: #392e2e;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 999; /* Ensure it stays above other content */
+  }
+  .sticky-box a {
+    display: inline-block;
+    transform: rotate(360deg); /* Counter-rotate the text */
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+    font-weight:500;
+  }
+
+  
+  /* Add this CSS to your existing stylesheets */
+  /* Add this CSS to your existing home.css file */
+  
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    padding:0 104px
+}
+
+.footer-row .office,
+.footer-row .contact,
+.footer-row .social-links,
+.footer-row .admissions,
+.footer-row .partner-universities {
+    flex: 1;
+    margin: 28 17px;
+    word-wrap:normal;
+}
+
+
+/* Rest of the CSS styles remain the same */ 
+
+
+footer {
+    background-color: #272222;
+    color: #fff;
+    padding: 39px 39px;
+    width:100%
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .office,
+  .contact,
+  .company-links,
+  .admissions,
+  .program,
+  .partner-universities,
+  .campuses {
+    font-family:sans-serif;
+    flex: 0 1 200px; 
+    margin-bottom: 40px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .office h3,
+  .contact h3,
+.company-links h3,
+.admissions h3,
+.program h3,
+.partner-universities h3,
+.campuses h3 {
+
+  font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .office p,
+  .contact p,
+  .company-links ul,
+  .admissions ul,
+  .program ul,
+  .partner-universities ul,
+  .campuses ul {
+    font-size: 14px;
+  }
+  
+  .company-links ul,
+  .admissions ul,
+  .program ul,
+.partner-universities ul,
+.campuses ul {
+  list-style: none;
+    padding: 0;
+  }
+  
+  .company-links ul li,
+  .admissions ul li,
+  .program ul li,
+  .partner-universities ul li,
+  .campuses ul li {
+    margin-bottom: 18px;
+}
+
+.company-links ul li a,
+.admissions ul li a,
+.program ul li a,
+.partner-universities ul li,
+.campuses ul li {
+    color: #fff;
+    text-decoration: none;
+}
+
+.company-links ul li a:hover,
+.admissions ul li a:hover,
+.program ul li a:hover,
+.partner-universities ul li:hover,
+.campuses ul li:hover {
+    text-decoration: underline;
+}
+.social-links{
+    color: #fff;
+}
+.social-links a{
+    color: #f5ecec;
+    row-gap: 2px;
+}
+.social-links a:hover{
+    transition: transform(2s);
+  }
+  
+  
+  
+  
+  
+  /* Adjust the width and height as needed */
+  
+  
+  /* alert box */
+  
+  .alert {
+    /* position: relative; */
+    margin-top: 200px; /* Adjust as needed */
+    background-color: #82abce; /* Red background color */
+    color: #0e0f0f; /* Dark red text color */
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid blue;
+    width:100%; /* Adjust width as needed */
+    /* max-width: 1206px; Limit the width to prevent it from spanning the entire screen */
+    /* margin: auto; Center horizontally */
+  }
+
+  .alert a {
+    color: #2e2526; /* Dark red color for the anchor tag */
+    text-decoration: none;
+}
+
+.alert a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+
+  
+@media only screen and (max-width: 768px) {
+  
+    .navbar{
+      padding: 20px;
+    }
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #f5ecec;
+      z-index: 999;
+      padding: 10px 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+    
+    .nav-links.active {
+      display: flex;
+      justify-content: center; /* Center the navbar links horizontally */
+      align-items: center; /* Center the navbar links vertically */
+      flex-direction: column; /* Stack the navbar links vertically */
+    }
+    
+    .nav-links li {
+      margin: 10px 0; /* Adjust the spacing between navbar links */
+    }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px; 
+        left: -35;
+        /* right:20px; */
+        width: 100%;
+        background-color: #f5ecec;
+        z-index: 999;
+    }
+  
+    .hamburger-menu {
+        /* display: block; */
+        position: fixed;
+        top: 29px; /* Adjust the top position as needed */
+        right: 96px; /* Adjust the right position as needed */
+        cursor: pointer;
+        z-index: 1000;
+    }
+  
+    .hamburger-menu .bar {
+        background-color: #000;
+        height: 3px;
+        width: 25px;
+        margin: 5px;
+        
+    }
+  
+    .navbar.active .nav-links {
+        display: block;
+    }
+  
+    .faq-header  {
+      max-width: 104%;
+      overflow: hidden;
+    }
+  
+    .faq-header h1 {
+      margin-left: 0;
+      margin-right: 0;
+      width: auto;
+    }
+  
+    .faq-category h1 {
+      align-items: center;
+      margin-left: 0;
+    }
+  
+    footer {
+      padding: 20px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .office,
+    .contact,
+    .company-links,
+    .admissions,
+    .program,
+    .partner-universities,
+    .campuses {
+      flex: 0 1 auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .faq-item {
+      margin-left: 0;
+      margin-right: 0;
+      width: 535px;
+    }
+    
+    .faq-category h2 {
+      margin-left: 0;
+    }
+    .alert{
+      width:103%;
+    }
+    #queBox{
+      width: 105%;;
+    }
+  }
+  @media only screen and (max-width: 412px) {
+    body{
+      padding: 0;
+      margin: 0 ;
+      overflow-x: hidden;
+    }
+    .navbar {
+      padding: 20px;
+    }
+  
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #f5ecec;
+      z-index: 999;
+    }
+  
+    .hamburger-menu {
+      display: block; /* Show hamburger menu icon */
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  
+    .faq-header {
+      text-align: center; /* Center the FAQ header */
+      width: 100%; /* Ensure FAQ header takes full width */
+      background-color: #baba39; /* Set background color */
+      padding: 20px; /* Add padding */
+      overflow: hidden;
+    }
+  
+    .faq-item {
+      /* margin-left: auto; /* Center the FAQ items */
+      /* margin-right: auto;  */
+      max-width: 100%; /* Set max width */
+      width: 545px; /* Ensure width adapts to content */
+      overflow: hidden ;
+    }
+  
+    .faq-category h2 {
+      text-align: center; /* Center the FAQ category headings */
+    }
+    #queBox{
+      width: 47em;
+    }
+    .alert{
+      width:188%;
+    }
+
+    footer{
+      width: 183%;
+      overflow: hidden;
+    }
+
+    .office,
+    .contact,
+    .company-links,
+    .admissions,
+    .program,
+    .partner-universities,
+    .campuses {
+      flex: 0 1 auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    
+  }
