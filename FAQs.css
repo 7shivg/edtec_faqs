@@ -164,7 +164,7 @@ body {
 }
 
 
-@media only screen and (max-width: 400px){
+@media screen and (max-width: 400px){
   .faq-header  {
     max-width: 100%;
   }
@@ -173,7 +173,7 @@ body {
 
 .faq-section {
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto !important;
   }
   
   .faq-category {
@@ -501,7 +501,7 @@ footer {
       width: 105%;;
     }
   }
-  @media only screen and (max-width: 412px) {
+  @media only screen and  (max-width: 412px) {
     body{
       padding: 0;
       margin: 0 ;
@@ -574,3 +574,29 @@ footer {
     }
     
   }
+ @media only screen and (min-width:413px) and (max-width:700px){
+  #queBox{
+    width: 114vh;
+  }
+  .faq-item{
+    margin-left: -30px;
+  }
+  .alert{
+    width: 115vh;
+  }
+  footer{
+    width: 108vh;
+  }
+
+ }
+ @media only screen and (min-width:200px) and (max-width:411px){
+  .faq-item{
+    margin-left: -20px;
+  }
+  .alert{
+    width: 111vh;
+  }
+  footer{
+    width: 109vh;
+  }
+ }
