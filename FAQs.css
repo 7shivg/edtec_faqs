@@ -600,3 +600,10 @@ footer {
     width: 109vh;
   }
  }
+ @media only screen and (min-width:769px) and (max-width:1200px){
+  ul .nav-links{
+    margin: 2px;
+    padding: 2px;
+  }
+ 
+ }
