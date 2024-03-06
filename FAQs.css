@@ -144,7 +144,7 @@ body {
     padding: 40px 0;
     background-color: rgb(246, 244, 161);
     box-sizing: border-box;
-    width: auto;
+    width: 105%;
 }
 
 .faq-header h1 {
@@ -154,22 +154,7 @@ body {
     margin-top: 100px; /* Remove default margin for h1 element */
 
   }
-@media only screen and (max-width:375px){
-  .faq-header {
-    width: 100%;
-  }
-  .hamburger-menu .bar{
-    margin-right: 50px;
-  }
-}
 
-
-@media screen and (max-width: 400px){
-  .faq-header  {
-    max-width: 100%;
-  }
-  
-}
 
 .faq-section {
     max-width: 800px;
@@ -373,7 +358,7 @@ footer {
     text-align: center;
     padding: 10px;
     border-top: 2px solid blue;
-    width:100%; /* Adjust width as needed */
+    width:104%; /* Adjust width as needed */
     /* max-width: 1206px; Limit the width to prevent it from spanning the entire screen */
     /* margin: auto; Center horizontally */
   }
@@ -533,7 +518,7 @@ footer {
     .faq-header {
       text-align: center; /* Center the FAQ header */
       width: 100%; /* Ensure FAQ header takes full width */
-      background-color: #baba39; /* Set background color */
+      background-color: rgb(246, 244, 161); /* Set background color */
       padding: 20px; /* Add padding */
       overflow: hidden;
     }
@@ -574,22 +559,22 @@ footer {
     }
     
   }
- @media only screen and (min-width:413px) and (max-width:700px){
+ @media only screen and (min-width: 413px) and (max-width: 749px){
   #queBox{
-    width: 114vh;
+    width: 121vh;
   }
   .faq-item{
-    margin-left: -30px;
+    margin-left: 33px;
   }
   .alert{
-    width: 115vh;
+    width: 130vh;
   }
   footer{
-    width: 108vh;
+    width: 122vh;
   }
 
  }
- @media only screen and (min-width:200px) and (max-width:411px){
+ @media only screen and (min-width: 200px) and (max-width: 411px){
   .faq-item{
     margin-left: -20px;
   }
@@ -600,10 +585,78 @@ footer {
     width: 109vh;
   }
  }
- @media only screen and (min-width:769px) and (max-width:1200px){
+ @media only screen and (min-width: 768px) and (max-width: 1200px){
+  .navbar{
+    padding: 40px;
+  }
   ul .nav-links{
     margin: 2px;
     padding: 2px;
+    /* font-size: 10px; */
+  }
+  .nav-links li a{
+    font-size: 27px;
+  }
+  #queBox{
+    width: 301vh;
+  }
+  .faq-item{
+   width: 248vh;
+   padding: 56px;
+   margin-left: 7vh;
+   border: 4px solid black;
+  }
+  .faq-category{
+    margin-left: 30vh;
+    font-size: 30px;
+  }
+  .alert{
+    width: 321vh;
+  }
+  .alert p{
+    font-size: 30px;
+  }
+ 
+  footer{
+    width: 269vmax;
+  }
+ 
+  .faq-header{
+    padding: 105px;
+  }
+  .social-links{
+    margin-left: 258px;
+  }
+  .faq-header h1{
+    font-size:50px;
+  }
+  .question{
+    font-size: 25px;
+  }
+  .footer-row h3{
+    font-size: 30px;
+  }
+  .footer-row h2{
+    font-size: 51px;
+  }
+  .footer-row{
+    gap: 80px;
   }
  
  }
+ /* @media only screen and (max-width:375px){ */
+ 
+
+
+@media screen and (max-width: 400px){
+  .faq-header  {
+    max-width: 100%;
+  }
+  .faq-header {
+    width: 100%;
+  }
+  .hamburger-menu .bar{
+    margin-right: 50px;
+  }
+}
+/* } */
